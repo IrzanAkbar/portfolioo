@@ -1,0 +1,349 @@
+/* Global styles */
+
+.typing-effect {
+  overflow: hidden; /* Add this to hide the overflow */
+  white-space: nowrap; /* Add this to prevent wrapping */
+}
+
+.typing-effect span {
+  animation: typing s steps(40, end); /* Adjust the animation duration and steps as needed */
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.lead {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #337ab7;
+  border-color: #337ab7;
+  color: #fff;
+}
+
+.btn-lg {
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: #23527c;
+  border-color: #23527c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: background-color 0.5s ease-out; /* added transition effect */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #337ab7; /* added color */
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666; /* added color */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7; /* added color */
+}
+
+a:hover {
+  color: #23527c;
+  text-decoration: underline; /* added underline effect */
+}
+
+/* Button styles */
+
+.btn {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px; /* added border radius */
+}
+
+.btn:hover {
+  background-color: #23527c;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* added hover effect */
+}
+
+/* Image styles */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(5px); /* added blur effect */
+}
+
+/* Jumbotron styles */
+
+.jumbotron {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 70%, rgba(0, 0, 0, 0) 100%);
+  background-size: 100% 250px;
+  background-position: 0% 80%;
+  transition: background-position 0.5s ease-out;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.jumbotron.loaded {
+  opacity: 1;
+}
+
+.jumbotron:hover {
+  background-position: 0% 0%;
+}
+
+.jumbotron.container {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.jumbotron h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.jumbotron p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.jumbotron .btn-primary {
+  background-color: #337ab7;
+  border-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.jumbotron .btn-primary:hover {
+  background-color: #23527c;
+  border-color: #23527c;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* added box shadow */
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+/* Portfolio styles */
+
+#portfolio {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#portfolio h2 {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #337ab7; /* added color */
+}
+
+#portfolio p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #666; /* added color */
+}
+
+#portfolio.card {
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* added border radius */
+}
+
+#portfolio.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+#portfolio.card-body {
+  padding: 20px;
+}
+
+#portfolio.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #337ab7; /* added color */
+}
+
+#portfolio.card-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #666; /* added color */
+}
+
+/* Animation styles */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Add animation to elements */
+
+.jumbotron h1,.jumbotron p, #portfolio h2, #portfolio p {
+  animation: fadeIn 2s ease-out;
+}
+
+.jumbotron.container, #portfolio.card {
+  animation: slideIn 2s ease-out;
+}
+
+/* Add hover effects to buttons and links */
+
+.btn:hover, a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Add responsive design */
+
+@media (max-width: 768px) {
+ .jumbotron {
+    height: 50vh;
+  }
+ .jumbotron.container {
+    padding-top: 10vh;
+  }
+  #portfolio.card {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+ .jumbotron {
+    height: 30vh;
+  }
+ .jumbotron.container {
+    padding-top: 5vh;
+  }
+  #portfolio.card {
+    margin-bottom: 5px;
+  }
+}
